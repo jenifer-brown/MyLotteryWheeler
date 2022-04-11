@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".ChoosePowerNumber">
+
+    <TextView
+        android:id="@+id/top_message_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <NumberPicker
+        android:id="@+id/select_power_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/NumberPickerText"
+        app:layout_constraintBottom_toTopOf="@+id/selected_power"
+        app:layout_constraintEnd_toStartOf="@+id/choose_power"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chosen_power" />
+
+    <Button
+        android:id="@+id/choose_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:onClick="chooseClicked"
+        android:text="@string/choose_button"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/selected_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/select_power_picker"
+        app:layout_constraintTop_toBottomOf="@+id/chosen_power" />
+
+    <TextView
+        android:id="@+id/selected_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/clear_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_power" />
+
+    <TextView
+        android:id="@+id/chosen_power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/choose_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_message_power" />
+
+    <Button
+        android:id="@+id/back_power"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:onClick="returnSelectWheel"
+        android:text="@string/back_button"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/next_power"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/next_power"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:onClick="launchDisplayWheeledNumbers"
+        android:text="@string/next_button"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back_power" />
+
+    <Button
+        android:id="@+id/clear_power"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:onClick="clearPower"
+        android:text="@string/clear"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/undo_power"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/undo_power" />
+
+    <Button
+        android:id="@+id/undo_power"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fraunces"
+        android:onClick="undoPower"
+        android:text="@string/undo"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/back_power"
+        app:layout_constraintEnd_toStartOf="@+id/clear_power"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

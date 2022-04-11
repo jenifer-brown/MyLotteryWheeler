@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">My Lottery Wheeler</string>
+    <string name="start_message">Let\'s Wheel!</string>
+    <string name="start_button">START</string>
+    <string name="next_button">NEXT</string>
+    <string name="activity2_name">Choose Number of Digits</string>
+    <string name="numsToWheelPrompt">How many numbers do you want to wheel?</string>
+    <string name="back_button">BACK</string>
+    <string name="spinner_description">Number of Digits to Wheel</string>
+    <string name="number_picker_textView">Select Number of Digits to Wheel</string>
+    <string name="clear">CLEAR</string>
+    <string name="undo">UNDO</string>
+    <string name="add">ADD</string>
+    <string name="select_num">Select a number</string>
+    <string name="numbers">Numbers:</string>
+    <string name="correct_verify">Are these numbers correct?</string>
+    <string name="tap_next">If so, tap next</string>
+    <string name="choose_button">Choose</string>
+    <string name="choose_a_wheel">Choose a wheel to use</string>
+    <string name="wheel_info">Wheel Info:</string>
+    <string name="finish_button">FINISH</string>
+
+</resources>
