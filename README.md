@@ -9,5 +9,5 @@ This strategy is most effective for pick 5 games that have a small number field.
 
 ## ABOUT THIS APP
 This app is built upon the Smart Luck lottery wheeling strategy published by Gail Howard [(smartluck.com)](<https://www.smartluck.com/>).
-As a portfolio project, it only includes a small subset of the published wheel combinations and is adapted for the NC Cash % lottery in
+As a portfolio project, it only includes a small subset of the published wheel combinations and is adapted for the NC Cash 5 lottery in
 which 5 numbers are drawn from numbers 1-43, inclusive. This app is purely for practice and is not intended for commercial use.
